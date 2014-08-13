@@ -12,5 +12,6 @@ angular
   .module('messMenuApp', [
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'firebase'
   ]);
