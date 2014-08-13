@@ -13,7 +13,6 @@ angular.module('messMenuApp')
     var menu = new Firebase("https://mess-menu.firebaseio.com/");
     $scope.menuList = $firebase(menu);
     $scope.menu = $scope.menuList.$asArray();
-    // $scope.menu = $scope.menu[$scope.menu.length - 1];
     console.log($scope.menu);
 
     // var messMenu = {

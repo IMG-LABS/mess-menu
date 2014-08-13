@@ -12,7 +12,8 @@ var app = angular.module('messMenuApp', [
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'firebase'
+    'firebase',
+    'angularMoment'
   ]);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
