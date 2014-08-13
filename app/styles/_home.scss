@@ -1,3 +1,10 @@
+body{
+  // background: #0E0D0D;
+  // color: #FAFAFA;
+  background: #FAFAFA;
+  overflow-y: hidden;
+}
+
 .row{
   max-width: 100%;
   width: 70%;
@@ -28,4 +35,12 @@
     height: 128px;
     text-align: center;
   }
+}
+
+.menu-footer{
+  position: fixed;
+  bottom: rem-calc(20);
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
