@@ -3,7 +3,8 @@
 </div>
 
 <div class="row menu-table">
-  <ul class="small-block-grid-8">
+
+  <ul class="small-block-grid-8" ng-if="menu.length > 0">
 
     <li class="menu-day-meal columns bold">
       <div id="menu-wrapper">Meal / Day</div>
@@ -39,12 +40,48 @@
       </div>
     </li>
   </ul>
+
+  <ul class="small-block-grid-8" ng-if="menu.length <= 0">
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Meal / Day</div>
+    </li>
+    <li class="menu-day-meal columns bold" ng-repeat="day in days">
+      <div id="menu-wrapper">{{ day }}</div>
+    </li>
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Breakfast</div>
+    </li>
+    <li class="menu-day-meal columns" ng-repeat="day in days">
+      <div id="menu-wrapper">&nbsp;</div>
+    </li>
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Lunch</div>
+    </li>
+    <li class="menu-day-meal columns" ng-repeat="day in days">
+      <div id="menu-wrapper">&nbsp;</div>
+    </li>
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Dinner</div>
+    </li>
+    <li class="menu-day-meal columns" ng-repeat="day in days">
+      <div id="menu-wrapper">&nbsp;</div>
+    </li>
+  </ul>
+
 </div>
 
 <div class="row menu-footer text-center">
   Made with <i class="fa fa-heart"></i> in <a href="https://github.com/IMG-LABS">IMG-LABS</a>
 </div>
 
-<div class="row menu-footer text-right">
+<div class="row menu-footer text-right" ng-if="menu.length > 0">
   Last updated: <span am-time-ago="menu[menu.length - 1].updated_on"></span>
+</div>
+
+<div class="row menu-footer text-right" ng-if="menu.length <= 0">
+  Last updated: Never
 </div>

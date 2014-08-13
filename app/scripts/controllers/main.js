@@ -15,6 +15,8 @@ angular.module('messMenuApp')
     $scope.menu = $scope.menuList.$asArray();
     console.log($scope.menu);
 
+    $scope.days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
     // var messMenu = {
     // updated_on: Date(),
     //   menuLists: [
