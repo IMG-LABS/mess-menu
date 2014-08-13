@@ -11,5 +11,6 @@
 angular
   .module('messMenuApp', [
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.router'
   ]);
