@@ -1,0 +1,31 @@
+.row{
+  max-width: 100%;
+  width: 70%;
+}
+
+.menu-heading{
+  text-align: center;
+  margin-top: rem-calc(40);
+  margin-bottom: rem-calc(40);
+  font-size: rem-calc(35);
+  text-transform: uppercase;
+}
+
+.menu-day-meal.columns{
+  padding: 0;
+
+  &.bold{
+    font-weight: bold;
+
+    div#menu-wrapper{
+      padding: rem-calc(50 0);
+      text-transform: uppercase;
+    }
+  }
+
+  div#menu-wrapper{
+    border: 1px solid;
+    height: 128px;
+    text-align: center;
+  }
+}

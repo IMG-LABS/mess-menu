@@ -8,10 +8,22 @@
  *
  * Main module of the application.
  */
-angular
-  .module('messMenuApp', [
+var app = angular.module('messMenuApp', [
     'ngSanitize',
     'ngTouch',
     'ui.router',
     'firebase'
   ]);
+
+app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+
+      $urlRouterProvider.otherwise('/');
+
+      $stateProvider
+
+        .state('main', {
+          url: '/',
+          controller: 'MainCtrl',
+          templateUrl: 'views/main.html',
+        });
+    }]);

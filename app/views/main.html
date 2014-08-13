@@ -1,0 +1,42 @@
+<div class="row menu-heading">
+  Malviya Bhawan Mess Menu
+</div>
+
+<div class="row menu-table">
+  <ul class="small-block-grid-8">
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Meal / Day</div>
+    </li>
+    <li class="menu-day-meal columns bold" ng-repeat="mealType in menu[menu.length - 1].menuLists">
+      <div id="menu-wrapper">{{ mealType.day }}</div>
+    </li>
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Breakfast</div>
+    </li>
+    <li class="menu-day-meal columns" ng-repeat="mealType in menu[menu.length - 1].menuLists">
+      <div id="menu-wrapper">
+        <div ng-repeat="meal in mealType.breakfast">{{ meal }}</div>
+      </div>
+    </li>
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Lunch</div>
+    </li>
+    <li class="menu-day-meal columns" ng-repeat="mealType in menu[menu.length - 1].menuLists">
+      <div id="menu-wrapper">
+        <div ng-repeat="meal in mealType.lunch">{{ meal }}</div>
+      </div>
+    </li>
+
+    <li class="menu-day-meal columns bold">
+      <div id="menu-wrapper">Dinner</div>
+    </li>
+    <li class="menu-day-meal columns" ng-repeat="mealType in menu[menu.length - 1].menuLists">
+      <div id="menu-wrapper">
+        <div ng-repeat="meal in mealType.dinner">{{ meal }}</div>
+      </div>
+    </li>
+  </ul>
+</div>
