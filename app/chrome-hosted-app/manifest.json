@@ -1,0 +1,20 @@
+{
+  "name": "Malviya Bhawan - Mess Menu",
+  "description": "Mess Menu for Malviya Bhawan, IIT Roorkee",
+  "manifest_version": 2,
+  "version": "0.1",
+  "app": {
+    "launch": {
+      "web_url": "http://localhost:9000/"
+    }
+  },
+  "icons": {
+    "128": "malviya.png"
+  },
+  "permissions": [
+    "unlimitedStorage",
+    "notifications",
+    "fullscreen"
+  ],
+  "author": "Abhas Mittal"
+}
